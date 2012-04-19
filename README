@@ -1,0 +1,17 @@
+BUILDOUT
+-------
+
+python2.6 bootstrap.py
+    and then 
+./bin/buildout -v
+
+START
+-----
+./bin/paster serve development.ini
+
+2012-04-19 13:08:15,377 INFO  [Zope][MainThread] Ready to handle requests
+Starting server in PID 5246.
+serving on http://127.0.0.1:8080
+
+Now we can create the plone site and browse..
+
