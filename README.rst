@@ -35,12 +35,12 @@ Should show something like::
     gunicorn                         RUNNING    pid 17955, uptime 0:00:09
     zeo                              RUNNING    pid 17956, uptime 0:00:09
 
-If you want to stop it, run::
-
-     ./bin/supervisorctl shutdown
-
 Now visit http://127.0.0.1:8000 to create a new Plone site.
 
 .. warning::
 
    Sunburst conflicts with plone.classic theme. For sunburst to work deactivate Plone Classic theme from Site Setup -> Add-ons
+
+If you want to stop it, run::
+
+     ./bin/supervisorctl shutdown
