@@ -1,8 +1,14 @@
+Requirements
+------------
+Before running the buildout make sure you have the header files of liblxml2 and libxslt::
+
+    sudo aptitude install libxslt1-dev libxml2-dev
+
 BUILDOUT
 -------
 
 python2.6 bootstrap.py
-    and then 
+    and then
 ./bin/buildout -v
 
 START
@@ -14,4 +20,3 @@ Starting server in PID 5246.
 serving on http://127.0.0.1:8080
 
 Now we can create the plone site and browse..
-
