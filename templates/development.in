@@ -11,6 +11,8 @@ pipeline =
 
 [server:main]
 use = egg:paste#http
+host = ${hosts:localhost}
+port = ${ports:main}
 
 # Begin logging configuration
 

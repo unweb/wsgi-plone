@@ -9,6 +9,11 @@ pipeline =
     egg:repoze.vhm#vhm_xheaders
     plone
 
+[server:main]
+use = egg:gunicorn#main
+host = ${hosts:any}
+port = ${ports:main}
+
 # Begin logging configuration
 
 [loggers]
