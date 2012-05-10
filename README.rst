@@ -40,8 +40,8 @@ If you want to stop it, run::
 
      ./bin/supervisorctl shutdown
 
-Now we can create the plone site and browse.
+Now visit http://127.0.0.1:8000 to create a new Plone site.
 
-    .. Warning::
+    .. warning::
 
     Sunburst conflicts with plone.classic theme. For sunburst to work deactivate Plone Classic theme from Site Setup -> Add-ons
