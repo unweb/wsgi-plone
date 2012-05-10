@@ -2,3 +2,10 @@ bin/
 eggs/
 include/
 lib/
+parts/
+var/
+production.ini
+development.ini
+.installed.cfg
+.project
+.Python

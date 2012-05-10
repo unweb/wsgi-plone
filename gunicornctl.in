@@ -13,5 +13,5 @@ input    = ${buildout:directory}/gunicornctl.in
 output   = ${buildout:directory}/bin/gunicornctl
 pidfile  = ${buildout:directory}/var/instance.pid
 logfile  = ${buildout:directory}/var/instance.log
-pasteini = ${buildout:directory}/paste.ini
+pasteini = ${buildout:directory}/production.ini
 workers  = 2
