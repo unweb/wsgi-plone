@@ -4,8 +4,9 @@ include/
 lib/
 parts/
 var/
-production.ini
+active.ini
 development.ini
+production.ini
 .installed.cfg
 .project
 .Python
