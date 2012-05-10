@@ -2,3 +2,8 @@ bin/
 eggs/
 include/
 lib/
+parts/
+var/
+.installed.cfg
+production.ini
+development.ini
