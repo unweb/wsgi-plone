@@ -1,22 +1,43 @@
+Introduction
+------------
+
+
 Requirements
 ------------
 Before running the buildout make sure you have the header files of liblxml2 and libxslt::
 
     sudo aptitude install libxslt1-dev libxml2-dev
 
-BUILDOUT
--------
 
-python2.6 bootstrap.py
-    and then
-./bin/buildout -v
+Buildout
+--------
+Clone this repository::
 
-START
------
-./bin/paster serve development.ini
+    git clone
 
-2012-04-19 13:08:15,377 INFO  [Zope][MainThread] Ready to handle requests
-Starting server in PID 5246.
-serving on http://127.0.0.1:8080
+You are now ready to run buildout::
+
+    cd wsgi-plone/
+    python2.6 bootstrap.py
+    ./bin/buildout -v
+
+Starting
+--------
+To start Plone simply run::
+
+    ./bin/supervisord
+
+To check if everything is working::
+
+    ./bin/supervisorctl status
+
+Should show something like::
+
+    gunicorn                         RUNNING    pid 17955, uptime 0:00:09
+    zeo                              RUNNING    pid 17956, uptime 0:00:09
+
+If you want to stop it, run::
+
+     ./bin/supervisorctl shutdown
 
 Now we can create the plone site and browse..
