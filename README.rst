@@ -8,12 +8,11 @@ Before running the buildout make sure you have the header files of liblxml2 and 
 
     sudo aptitude install libxslt1-dev libxml2-dev
 
-
 Buildout
 --------
 Clone this repository::
 
-    git clone
+    git clone git://github.com/unweb/wsgi-plone.git
 
 You are now ready to run buildout::
 
@@ -42,6 +41,6 @@ If you want to stop it, run::
 
 Now visit http://127.0.0.1:8000 to create a new Plone site.
 
-    .. warning::
+.. warning::
 
-    Sunburst conflicts with plone.classic theme. For sunburst to work deactivate Plone Classic theme from Site Setup -> Add-ons
+   Sunburst conflicts with plone.classic theme. For sunburst to work deactivate Plone Classic theme from Site Setup -> Add-ons
