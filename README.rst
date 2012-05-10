@@ -40,4 +40,8 @@ If you want to stop it, run::
 
      ./bin/supervisorctl shutdown
 
-Now we can create the plone site and browse..
+Now we can create the plone site and browse.
+
+    .. Warning::
+
+    Sunburst conflicts with plone.classic theme. For sunburst to work deactivate Plone Classic theme from Site Setup -> Add-ons
