@@ -1,0 +1,17 @@
+[gunicorn]
+recipe = zc.recipe.egg:scripts
+dependent-scripts = true
+eggs = 
+    ${plone:eggs} 
+    eventlet 
+    gunicorn
+
+[gunicornctl]
+recipe = collective.recipe.template
+mode = 755
+input    = ${buildout:directory}/gunicornctl.in
+output   = ${buildout:directory}/bin/gunicornctl
+pidfile  = ${buildout:directory}/var/instance.pid
+logfile  = ${buildout:directory}/var/instance.log
+pasteini = ${buildout:directory}/paste.ini
+workers  = 2
