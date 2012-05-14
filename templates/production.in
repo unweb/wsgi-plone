@@ -13,6 +13,7 @@ pipeline =
 use = egg:gunicorn#main
 host = ${hosts:any}
 port = ${ports:main}
+workers = 4
 
 # Begin logging configuration
 
